@@ -94,24 +94,21 @@ td + td { border-left-style:none }
 }
 
 #Export {
-	position:absolute;
-	left:310px;
-	box-sizing:border-box;
-	color:#FFF;
-	text-transform:uppercase;
-	background-color:#4980ae;
-	font-size:18px;
-	width:auto;
-    min-width:300px;
-	height:auto;
-    padding:10px 28px;
+    position:absolute;
+    left:0;
+    box-sizing:border-box;
+    color:#FFF;
+    text-transform:uppercase;
+    background-color:#4980ae;
+    font-size:18px;
+    width:100%;
+    height:36px;
+    border-style:none;
+    border-radius:4px;
+    cursor:pointer;
+    transition:all 0.3s ease-in-out;
     white-space:nowrap;
-    line-height:1.2;
-	border-style:none;
-	border-radius:4px;
-	cursor:pointer;
-	transition:all .3s ease-in-out
-}
+}}
 
 #Export:hover { opacity:.85 }
 

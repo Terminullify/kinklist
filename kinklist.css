@@ -516,3 +516,181 @@ td + td { border-left-style:none }
 @media (max-height: 500px) {
 	#InputPrevious,#InputNext { display:none }
 }
+
+/* --- Dark purple theme overrides --- */
+
+body {
+    background: #120d18;
+    color: #ddd6e7;
+}
+
+h1,
+h2,
+h3 {
+    color: #f0eafa;
+}
+
+table {
+    background: #211a29;
+}
+
+th {
+    background: #4a3560;
+    color: #f2ebfa;
+    border-color: #5a486e;
+}
+
+td {
+    background: #261f2f;
+    color: #ddd6e7;
+    border-color: #4a3d59;
+}
+
+select,
+input,
+textarea {
+    background: #2b2235;
+    color: #eee7f7;
+    border-color: #675575;
+}
+
+#Export {
+    background-color: #0483de;
+    color: #f8f4fb;
+}
+
+#Export:hover {
+    background-color: #0869b2;
+}
+
+#StartBtn {
+    background-color: #3a8f64;
+}
+
+/* popup / selection interface */
+#InputOverlay .widthWrapper #InputCurrent,
+#InputOverlay .widthWrapper .kink-simple {
+    background-color: #2a2133;
+    color: #eee7f7;
+}
+
+#InputOverlay .widthWrapper #InputPrevious .kink-simple:first-child,
+#InputOverlay .widthWrapper #InputNext .kink-simple:nth-child(3) {
+    background-color: #201925;
+}
+
+#InputOverlay .widthWrapper #InputPrevious .kink-simple:nth-child(2),
+#InputOverlay .widthWrapper #InputNext .kink-simple:nth-child(2) {
+    background-color: #241c2b;
+}
+
+#InputOverlay .widthWrapper #InputPrevious .kink-simple:nth-child(3),
+#InputOverlay .widthWrapper #InputNext .kink-simple:first-child {
+    background-color: #291f32;
+}
+
+#InputOverlay .widthWrapper #InputCurrent #InputValues .big-choice {
+    background-color: #3b2f48;
+    color: #f0eafa;
+}
+
+#InputOverlay .widthWrapper #InputCurrent #InputValues .big-choice:hover {
+    background-color: #4a3a5b;
+    border-color: #806a96;
+}
+
+#Description,
+#EditOverlay #Kinks {
+    background-color: #241d2d;
+    color: #eee7f7;
+    border-color: #675575;
+}
+
+.KinkDesc {
+    filter: invert(1);
+}
+
+/* Slightly improve dot visibility on dark theme */
+.choice {
+    opacity: .2;
+}
+
+.choice.selected,
+.selected > .choice {
+    opacity: 1;
+}
+
+/* --- List type selector --- */
+
+#listTypeNotice {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    width: fit-content;
+    max-width: 700px;
+    box-sizing: border-box;
+    margin: 8px 0 14px;
+    padding: 12px 14px;
+
+    background: #2b2035;
+    border: 2px solid #8f6aad;
+    border-radius: 8px;
+}
+
+.listTypeCopy {
+    max-width: 460px;
+}
+
+.listTypeTitle {
+    color: #f1e9fa;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.listTypeBadge {
+    display: inline-block;
+    margin-right: 6px;
+    padding: 3px 6px;
+
+    background: #704d8e;
+    color: #ffffff;
+    border-radius: 4px;
+
+    font-size: 10px;
+    letter-spacing: .5px;
+    vertical-align: 2px;
+}
+
+.listTypeHelp {
+    color: #ff6b86;
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+#listType {
+    min-width: 190px;
+    padding: 7px 10px;
+
+    background: #17131d;
+    color: #f1e9fa;
+    border: 1px solid #8f6aad;
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    #listTypeNotice {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #listType {
+        width: 100%;
+    }
+}
